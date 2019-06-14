@@ -1,0 +1,313 @@
+#order_price {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    z-index: 50;
+    left: 0;
+    width: 440px;
+    min-height: 50px;
+    height: auto;
+}
+
+#order_price .form {
+    width: 440px;
+    height: auto;
+    min-height: 50px;
+    background: #363f43;
+    border-radius: 10em;
+    max-width: 100%;
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#top #order_price form {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+#order_price form input,
+#order_price form button {
+    border-radius: 10em !important;
+    display: block;
+    float: left;
+}
+
+.form_email_field {
+    width: 62% !important;
+}
+
+
+#order_price button.action_btn {
+    padding: 20px;
+    width: 75px;
+    height: 75px;
+    background: rgba(1, 72, 111, 0.6);
+    border: none;
+    border-radius: 5em;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 3px rgba(62, 172, 240, 0.76);
+    animation-name: btnPulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /*animation-delay: 2000;*/
+}
+
+#order_price button.action_btn svg {
+    fill: #fff;
+}
+
+.send_form_btn {
+    width: 37%;
+    background: #3cd05c;
+    color: #363636;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+.form_email_field {
+    width: 60%;
+    margin: 0 !important;
+    text-indent: 15px;
+}
+
+#order_price .message {
+    position: absolute;
+    background: #fff;
+    width: 50%;
+    bottom: calc(100% + 10px);
+    left: 30px;
+    padding: 20px;
+    border-radius: 1em;
+}
+
+#order_price .message:after {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    display: block;
+    content: ' ';
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: -10px;
+}
+
+@keyframes btnPulse {
+    0% {
+        box-shadow: 0 0 10px 3px rgba(62, 172, 240, 0.76);
+    }
+
+    20% {
+        box-shadow: 0 0 20px 5px rgba(62, 172, 240, 0.76);
+    }
+
+    40% {
+        box-shadow: 0 0 20px 5px rgba(62, 172, 240, 0.76);
+    }
+
+    60% {
+        box-shadow: 0 0 10px 3px rgba(62, 172, 240, 0.76);
+    }
+
+    80% {
+        box-shadow: 0 0 10px 3px rgba(62, 172, 240, 0.76);
+    }
+
+    100% {
+        box-shadow: 0 0 20px 5px rgba(62, 172, 240, 0.76);
+    }
+}
+
+
+
+
+/*Анимация лоадера*/
+#fountainG{
+    position:relative;
+    width:90px;
+    height:11px;
+    margin:auto;
+}
+
+.fountainG{
+    position:absolute;
+    top:0;
+    background-color:rgba(255,255,255,0.54);
+    width:11px;
+    height:11px;
+    animation-name:bounce_fountainG;
+        -o-animation-name:bounce_fountainG;
+        -ms-animation-name:bounce_fountainG;
+        -webkit-animation-name:bounce_fountainG;
+        -moz-animation-name:bounce_fountainG;
+    animation-duration:1.035s;
+        -o-animation-duration:1.035s;
+        -ms-animation-duration:1.035s;
+        -webkit-animation-duration:1.035s;
+        -moz-animation-duration:1.035s;
+    animation-iteration-count:infinite;
+        -o-animation-iteration-count:infinite;
+        -ms-animation-iteration-count:infinite;
+        -webkit-animation-iteration-count:infinite;
+        -moz-animation-iteration-count:infinite;
+    animation-direction:normal;
+        -o-animation-direction:normal;
+        -ms-animation-direction:normal;
+        -webkit-animation-direction:normal;
+        -moz-animation-direction:normal;
+    transform:scale(.3);
+        -o-transform:scale(.3);
+        -ms-transform:scale(.3);
+        -webkit-transform:scale(.3);
+        -moz-transform:scale(.3);
+    border-radius:7px;
+        -o-border-radius:7px;
+        -ms-border-radius:7px;
+        -webkit-border-radius:7px;
+        -moz-border-radius:7px;
+}
+
+#fountainG_1{
+    left:0;
+    animation-delay:0.416s;
+        -o-animation-delay:0.416s;
+        -ms-animation-delay:0.416s;
+        -webkit-animation-delay:0.416s;
+        -moz-animation-delay:0.416s;
+}
+
+#fountainG_2{
+    left:11px;
+    animation-delay:0.5225s;
+        -o-animation-delay:0.5225s;
+        -ms-animation-delay:0.5225s;
+        -webkit-animation-delay:0.5225s;
+        -moz-animation-delay:0.5225s;
+}
+
+#fountainG_3{
+    left:22px;
+    animation-delay:0.619s;
+        -o-animation-delay:0.619s;
+        -ms-animation-delay:0.619s;
+        -webkit-animation-delay:0.619s;
+        -moz-animation-delay:0.619s;
+}
+
+#fountainG_4{
+    left:34px;
+    animation-delay:0.7255s;
+        -o-animation-delay:0.7255s;
+        -ms-animation-delay:0.7255s;
+        -webkit-animation-delay:0.7255s;
+        -moz-animation-delay:0.7255s;
+}
+
+#fountainG_5{
+    left:45px;
+    animation-delay:0.832s;
+        -o-animation-delay:0.832s;
+        -ms-animation-delay:0.832s;
+        -webkit-animation-delay:0.832s;
+        -moz-animation-delay:0.832s;
+}
+
+#fountainG_6{
+    left:56px;
+    animation-delay:0.9385s;
+        -o-animation-delay:0.9385s;
+        -ms-animation-delay:0.9385s;
+        -webkit-animation-delay:0.9385s;
+        -moz-animation-delay:0.9385s;
+}
+
+#fountainG_7{
+    left:67px;
+    animation-delay:1.035s;
+        -o-animation-delay:1.035s;
+        -ms-animation-delay:1.035s;
+        -webkit-animation-delay:1.035s;
+        -moz-animation-delay:1.035s;
+}
+
+#fountainG_8{
+    left:79px;
+    animation-delay:1.1415s;
+        -o-animation-delay:1.1415s;
+        -ms-animation-delay:1.1415s;
+        -webkit-animation-delay:1.1415s;
+        -moz-animation-delay:1.1415s;
+}
+
+
+
+@keyframes bounce_fountainG{
+    0%{
+    transform:scale(1);
+        background-color:rgb(255,255,255);
+    }
+
+    100%{
+    transform:scale(.3);
+        background-color:rgba(255,255,255,0.5);
+    }
+}
+
+@-o-keyframes bounce_fountainG{
+    0%{
+    -o-transform:scale(1);
+        background-color:rgb(255,255,255);
+    }
+
+    100%{
+    -o-transform:scale(.3);
+        background-color:rgba(255,255,255,0.5);
+    }
+}
+
+@-ms-keyframes bounce_fountainG{
+    0%{
+    -ms-transform:scale(1);
+        background-color:rgb(255,255,255);
+    }
+
+    100%{
+    -ms-transform:scale(.3);
+        background-color:rgba(255,255,255,0.5);
+    }
+}
+
+@-webkit-keyframes bounce_fountainG{
+    0%{
+    -webkit-transform:scale(1);
+        background-color:rgb(255,255,255);
+    }
+
+    100%{
+    -webkit-transform:scale(.3);
+        background-color:rgba(255,255,255,0.5);
+    }
+}
+
+@-moz-keyframes bounce_fountainG{
+    0%{
+    -moz-transform:scale(1);
+        background-color:rgb(255,255,255);
+    }
+
+    100%{
+    -moz-transform:scale(.3);
+        background-color:rgba(255,255,255,0.5);
+    }
+}
