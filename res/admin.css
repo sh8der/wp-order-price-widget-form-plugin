@@ -1,0 +1,81 @@
+.order-price-tabs form {
+    max-width: 500px;
+    width: 100%;
+}
+
+.order-price-tabs form button.send_btn[disabled],
+.order-price-tabs form button.send_btn[disabled]:hover {
+    background: #ccc;
+}
+.order-price-tabs form button.send_btn {
+    background: #00b9ec;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.order-price-tabs form button.send_btn:hover {
+    background: #00a0d2;
+}
+
+.order-price-tabs form label {
+    width: 100%;
+    float: left;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.order-price-tabs form input {
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    text-indent: 15px;
+}
+
+.order-price-tabs {
+    background: #fff;
+    margin: 30px 0;
+    border-radius: 1em;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.order-price-tabs ul.tabl-list {
+    margin: 0;
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.order-price-tabs ul.tabl-list li {
+    padding: 20px;
+    float: left;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.order-price-tabs ul.tabl-list li:hover {
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.order-price-tabs ul.tabl-list li.active {
+    background: #00b9eb;
+    color: #fff;
+
+}
+
+.order-price-tabs .tab {
+    display: none;
+    width: 100%;
+    float: left;
+    padding: 40px;
+}
+
+.order-price-tabs .tab.open {
+    display: block;
+}

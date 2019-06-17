@@ -17,9 +17,11 @@ define( 'INV_PLUGIN_ACTIVE', true );
 define( 'INV_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'INV_PLUGIN_BASE', plugin_basename( __FILE__ ) );
 define( 'INV_PLUGIN_PATH', WP_PLUGIN_URL . '/order-price' );
+define( 'INV_LOG_PATH', __DIR__ . '/logs' );
 
 require_once INV_PLUGIN_DIR . '/includes/functions.php';
 require_once INV_PLUGIN_DIR . '/includes/run.php';
+require_once INV_PLUGIN_DIR . '/includes/admin/options.php';
 
 add_action( 'init', 'INV_register_table_name', 1 );
 add_action( 'switch_blog', 'INV_register_table_name' );
@@ -27,6 +29,7 @@ add_action( 'switch_blog', 'INV_register_table_name' );
 function INV_register_table_name() {
 	global $wpdb;
     $wpdb->order_price_table = "{$wpdb->prefix}inv_order_price_form";
+    $wpdb->order_price_setting_table = "{$wpdb->prefix}inv_order_price_form_setting";
 }
 
 register_activation_hook( __FILE__, 'INV_plugin_activate');

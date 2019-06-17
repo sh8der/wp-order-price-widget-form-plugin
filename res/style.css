@@ -19,7 +19,9 @@
     margin: 20px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -500px;
+    opacity: 0;
+    box-shadow: 0 5px 10px 0 rgba(51, 51, 51, 0.3);
 }
 
 #top #order_price form {
@@ -42,7 +44,6 @@
     width: 62% !important;
 }
 
-
 #order_price button.action_btn {
     padding: 20px;
     width: 75px;
@@ -56,7 +57,29 @@
     animation-name: btnPulse;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    /*animation-delay: 2000;*/
+}
+
+#order_price button.close_form svg {
+    fill: #fff;
+}
+
+#order_price button.close_form {
+    position: absolute;
+    right: -30px;
+    top: -25px;
+    padding: 10px;
+    background: #3cd05c;
+    border: none;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    border-radius: 5em;
+    opacity: .3;
+    cursor: pointer;
+}
+
+#order_price button.close_form:hover {
+    opacity: 1
 }
 
 #order_price button.action_btn svg {
@@ -84,10 +107,11 @@
     position: absolute;
     background: #fff;
     width: 50%;
-    bottom: calc(100% + 10px);
+    bottom: calc(100% + 50px);
     left: 30px;
     padding: 20px;
     border-radius: 1em;
+    opacity: 0;
 }
 
 #order_price .message:after {
